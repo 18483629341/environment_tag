@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>环境标签服务系统</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/home.css" />
+	<link rel="stylesheet" type="text/css" href="css/home_left.css" />
+	<link rel="stylesheet" type="text/css" href="css/home_right.css" />
+</head>
+
+<body>
+	<div class="containter">
+		<div class="containter-title">
+			<img src="img/02_03.png" />
+			<ul class="containter-title-nav">
+				<li class="active">
+					<img src="img/sy.png" class="nav-img-on" />
+					<img src="img/sy_off.png" class="nav-img-off" />
+					<span>首页</span>
+				</li>
+				<li>
+					<img src="img/qy.png" class="nav-img-on" />
+					<img src="img/qy_off.png" class="nav-img-off" />
+					<span>企业群体分析</span>
+
+				</li>
+				<li>
+					<img src="img/bq.png" class="nav-img-on" />
+					<img src="img/bq_off.png" class="nav-img-off" />
+					<span>标签工厂</span>
+				</li>
+			</ul>
+			<div class="containter-title-role">
+				<span>你好，真艺</span>
+				<img src="img/09_051.png" class="role-img-off" />
+				<img src="img/09_05.png" class="role-img-on" />
+			</div>
+		</div>
+		<content class="content">
+				<div class="LcontainterLeft">
+					
+				</div>
+					<!--LcontainterLeft  end-->
+				<div class='LcontainterRight'>
+					<div class="RightTextDir">
+			    <ul class="RightNav">
+						<li class="active">
+							<span>基础特征</span>
+						</li>
+						<li>
+							<span>污染排放特征</span>
+						</li>
+						<li>
+							<span>监管行为特征</span>
+						</li>
+						<li>
+							<span>价值特征</span>
+						</li>
+						<li>
+							<span>风险防控</span>
+						</li>
+					</ul>
+					<div class="clear"></div>
+					<div class="ContenInfo">
+						<!--InfoList 表示横向的一列的 box-->
+						<div class="InfoListBox">
+							<div class="InfoList">
+								<div class="InfoListLeft">
+									<span>基本信息</span>
+								</div>
+								<div class="InfoListRight">
+										<ul class="InfoListContent">
+												<li>
+													<span class="homeBtn active">区域</span>
+												</li>
+												<li>
+													<span class="homeBtn">流域</span>
+												</li>
+											</ul>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+							<div class="InfoList">
+								<div class="InfoListLeft">
+									<span>生产特征</span>
+								</div>
+								<div class="InfoListRight">
+										<ul class="InfoListContent">
+												<li class="selectLi">
+													<span class="selectSpan">生产能力 <i class="icon dropIcon"></i> </span>
+												</li>
+												<li class="selectLi">
+													<span class="selectSpan">产品种类<i class="icon dropIcon"></i></span>
+												</li>
+												<li class="selectLi">
+													<span class="selectSpan">原辅材料种类<i class="icon dropIcon"></i></span>
+													<ul class="TreeList" >
+															<li class="treeLi" value="0">一级</li>
+															<li class="treeLi" value="1">二级</li>
+															<li class="treeLi" value="2">三级</li>
+													</ul>
+												</li>
+											</ul>
+								</div>
+							</div>	
+
+							<div class="clear"></div>
+							<div class="InfoList">
+								<div class="InfoListLeft">
+									<span>治理特征</span>
+								</div>
+								<div class="InfoListRight">
+										<ul class="InfoListContent">
+												<li class="selectLi">
+													<span class="selectSpan">治理工艺 <i class="icon dropIcon"></i> </span>
+												</li>
+												<li class="selectLi">
+													<span class="selectSpan">废气排放形式<i class="icon dropIcon"></i></span>
+												</li>
+											</ul>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+							<div class="InfoList HasTreeList LastInfoList" >
+								<div class="InfoListLeft treeTitle">
+									<span class="active " id="rowMonth">污染排口</span>
+								</div>
+								<div class="InfoListRight">
+										<ul class="InfoListContent">
+												<li class="selectLi">
+													<span class="selectSpan">用煤 <i class="icon dropIcon"></i> </span>
+												</li>
+												<li class="selectLi">
+													<span class="selectSpan">用油<i class="icon dropIcon"></i></span>
+												</li>
+											</ul>
+								</div>
+								<!--TreeContent  start-->
+								<!--<div class="TreeContent">
+									<ul class="TreeList " id="TreeList_0" value='0'>
+										<li class="treeLi" value="0">全部</li>
+										<li class="treeLi active" value="1">废水<i class="icon rightIcon active"></i></li>
+										<li class="treeLi" value="2">废气<i class="icon rightIcon"></i></li>
+									</ul>
+									<ul class="TreeList" id="TreeList_1" value="1">
+										<li>大粪</li>
+										<li>大便</li>
+									</ul>
+									<ul class="TreeList" id="TreeList_2" value="2" >
+										<li  id='test'>小粪</li>
+										<li>小便</li>
+									</ul>
+								</div>-->
+								<!--TreeContent  end-->
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="tagDiv">
+							<div class="leftTag">
+								<i class="icon tagIcon"></i>
+								<span>已选标签</span>
+							</div>
+							<ul class="rightTagLi">
+								<li class="ListLi ">
+									
+									<div class="ListContent">
+										<div class="Tagcontent">
+											<span class="tagFont">深圳市</span>
+											<span class="icon IconClose"> </span>
+										</div>
+										<div class="Tagcontent">
+											<span class="tagFont">电镀行业</span>
+											<span class="icon IconClose"> </span>
+										</div>
+										<div class="Tagcontent">
+											<span class="tagFont">电镀行业</span>
+											<span class="icon IconClose"> </span>
+										</div>
+										<div class="Tagcontent">
+											<span class="tagFont">电镀行业</span>
+											<span class="icon IconClose"> </span>
+										</div>
+										<div class="Tagcontent">
+											<span class="tagFont">电镀行业</span>
+											<span class="icon IconClose"> </span>
+										</div>
+										<div class="Tagcontent">
+											<span class="tagFont">深圳市</span>
+											<span class="icon IconClose"> </span>
+										</div>			
+										
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="ListControl" align="right">
+									<span class="HomeBtn controlBtn cancelBtn">取消</span>
+									<span class="HomeBtn controlBtn resetBtn">重置</span>
+									<span class="HomeBtn controlBtn confirmBtn active">确认</span>
+							</div>
+					</div>
+					</div>
+					<div class="mapImg">
+					</div>
+					
+				</div>
+					<!--LcontainterRight  end-->
+		</content>
+		
+
+
+	</div>
+
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+
+<script>
+	//TreeContent js  目录树
+	   
+	    var nowIndex=0;
+			var nowLevel=0;
+			var innerHtmla=null;//第一列的html
+			var subHtml=null;//总的content的html
+			var htmlArr=[];//暂存相关html的数组
+			var TreeContent;//树dom的节点
+	    const ARR = [
+						{
+							name: "全部",
+					 	},
+						{
+           		name: "废水",
+           		categories: [
+								{
+									name: "大粪",
+									categories: [
+										{
+											name:'污水',
+											categories: [
+												{
+													name: '污水1'
+												}, {
+														name: '污水2'
+												}
+											]
+										}, {
+												name: '生活用水'
+										}
+									]
+								}
+								
+							]
+            },
+						{
+           		name: "废气",
+           		categories: [
+								{
+									name: "工业燃烧",
+								},
+								{
+                	name: "农业燃烧",
+								}
+							]
+            }	
+				];
+				$(function(){
+					initHtml();
+				})
+			function initHtml(){
+				TreeContent=document.createElement('div');
+				TreeContent.setAttribute('class','TreeContent');
+				
+				innerHtmla='	<ul class="TreeList" id="TreeList_'+nowLevel+'" value="0">';
+				for (var i in ARR) {
+					if('categories' in ARR[i]){
+						innerHtmla+='<li class="treeLi" value="'+i+'">'+ARR[i].name+'<i class="icon rightIcon"></i></li>';
+					}else{
+						innerHtmla+='<li class="treeLi" value="'+i+'">'+ARR[i].name+'</li>';
+					}
+				}
+				innerHtmla+='</ul>';
+				htmlArr[0]=innerHtmla;
+				TreeContent.innerHTML=innerHtmla;
+				var element=document.querySelector(".HasTreeList");
+				element.appendChild(TreeContent);
+			}
+		/*$("body").on('click','.LcontainterRight',function(){  
+			console.log('1');
+			$('.TreeContent').removeClass("show");	
+		})*/
+    $("body").on('click','.HasTreeList .treeTitle',function(){  
+			$('.TreeContent').toggleClass("show");	
+		})
+		
+		$("body").on('click','.treeLi',function(){  
+			  //只有有右箭头的才能执行以下操作；
+				nowLevel=$(this).parents('.TreeList').attr('id');
+				nowLevel=parseInt(nowLevel.split('_')[1]);//取得列表所在的层级
+				var 	thisIndex=parseInt($(this).attr('value'));//当前选中li元素附带的下标值
+				$(this).siblings("treeLi").removeClass('active');
+				$(this).addClass('active');
+				//console.log(thisIndex);
+				$uls=$(this).parent('.TreeList').prevAll();
+				console.log($(this).children('.rightIcon').length);
+			if($(this).children('.rightIcon').length==0){//当没有向右的箭头，获得当前元素值
+				//删除这个级别以后的treeList
+				console.warn( htmlArr);
+				var subHtml='';
+				var newHtmlArr=[];
+				for(var i in htmlArr){
+					if(i<nowLevel+1){
+						subHtml+=htmlArr[i];
+						newHtmlArr.push(htmlArr[i]);
+					}else{
+           break;
+					}
+				}
+				HtmlArr=newHtmlArr;
+				
+				$('.TreeContent').html(subHtml);
+				//获得当前元素的value
+
+			}else{//当有向右的箭头，执行显示下级列
+				
+				//console.log($uls);
+				var valuesArr=[];//存放前面list中ul的value
+				for(var item of $uls){
+				
+					var id=parseInt(item.getAttribute("value"));//取得选中li元素的父元素的所有之前所有ul的所带的位置值
+					//console.info(item,id);
+					valuesArr.push(id);
+				}
+				valuesArr.reverse();
+				valuesArr.push($(this).parent('.TreeList').attr('value'));
+				valuesArr.shift();
+				//console.log(valuesArr);
+				var objArr=null;//接收最终做为参数的对象
+			
+				if(valuesArr.length==0){
+            objArr=ARR[thisIndex]['categories'];
+				}else{
+						
+						for(let i=0;i<valuesArr.length;i++){
+								var index=valuesArr[i];//拿到对应的下标值
+							//	console.log(valuesArr,i,index);
+							if(i==0){//valuesArr=[0];
+								objArr=ARR[index]['categories'];
+							//console.log(objArr);
+							}else{
+								objArr=objArr[index]['categories'];
+								//console.log(i,index,objArr);
+							}
+						}
+						objArr=objArr[thisIndex]['categories'];
+				}
+					
+			//console.log(objArr);
+			showNext(nowLevel,thisIndex,objArr);
+			}
+		})
+		function showNext(i,j,objArr){
+			console.log(objArr);
+			if(JSON.stringify(objArr) !== '[]'){
+				var Level=parseInt(i+1);//表示列表所属第几层级
+				i=parseInt(i);
+			// j 表示该列表数据来源的上级对象所属的下标
+			 var nextHtml='<ul class="TreeList" id="TreeList_'+Level+'" value="'+j+'">';
+				for (var index in objArr) {
+					console.info(objArr[i],'categories' in objArr[index]);
+					if('categories' in objArr[index]){
+						nextHtml+='<li class="treeLi" value="'+index+'">'+objArr[index].name+'<i class="icon rightIcon"></i></li>';
+					}else{
+						nextHtml+='<li class="treeLi" value="'+index+'">'+objArr[index].name+'</li>';
+					}
+				}
+				nextHtml+='</ul>';
+			
+				htmlArr[i+1]=nextHtml;//置换html内容
+				//去除html数组长度的超过i+1后面的元素 
+				var newHtmlArr=[];
+				var subHtml='';
+				for(var j in htmlArr){
+					if(j<Level+1){
+						subHtml+=htmlArr[j];
+						newHtmlArr.push(htmlArr[j]);
+					}else{
+           break;
+					}
+				}
+				HtmlArr=newHtmlArr;
+				$('.TreeContent').html(subHtml);
+			}else{
+				
+			}
+		   
+		}
+	
+      
+   
+</script>
+<script>
+	$(function(){
+		var showFlag=false;
+		$(".selectLi").click(function(){
+			$(this).find('.dropIcon.icon').toggleClass("rotateIcon");
+			$(this).children('.TreeList').toggleClass("show");	
+		})
+	})
+	
+</script>
+</html>

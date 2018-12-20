@@ -1,0 +1,127 @@
+.containter{
+	/*width: 1920px;*/
+	width: 100%;
+	height: 1774px;
+}
+
+.emission-features{
+	width: 100%;
+	/*width: 1730px;*/
+	height: 1637px;
+	padding: 14px 14px 0;
+	background-color: #ffffff;
+	border-radius: 6px;
+}
+
+.large-household{
+	width: 100%;
+	/*width: 1637px;*/
+	display: flex;
+    justify-content: space-between;
+}
+
+.large-household-box{
+	position: relative;
+	float: left;
+	/*width: 332px;*/
+	width: 20%;
+	height: 118px;
+	padding: 23px;
+	margin-right: 13px;
+	margin-bottom: 13px;
+	color: #fff;
+	border-radius: 6px;
+}
+
+.large-household-box h3{
+	padding-bottom: 27px;
+	font-size: 18px;
+	font-weight: 600;
+}
+.household-box-sub h3{
+	padding-bottom: 23px;
+}
+.large-household-box p{
+	font-size: 16px;
+}
+.large-household-box img{
+	position: absolute;
+	top: 23px;
+	right: 23px;
+}
+
+/*文档宽度小于1920px*/
+@media screen and (max-width: 1920px) {
+    .large-household-box{
+		padding: 22px;
+	}
+	.large-household-box img{
+		top: 22px;
+		right: 22px;
+		width: 50px;
+	}
+}
+
+/*文档宽度小于1366px*/
+@media screen and (max-width: 1366px) {
+	.large-household-box{
+		padding: 21px 16px;
+	}
+	.large-household-box img{
+		top: 25px;
+		right: 15px;
+		width: 50px;
+	}
+}
+
+.large-household li:first-child{
+	background: url(../img/01_03.png) no-repeat;
+	background-size: 100% 100%;
+}
+.large-household li:nth-child(2){
+	background: url(../img/01_05.png) no-repeat;
+	background-size: 100% 100%;
+}
+.large-household li:nth-child(3){
+	background: url(../img/01_07.png) no-repeat;
+	background-size: 100% 100%;
+}
+.large-household li:nth-child(4){
+	background: url(../img/012_20.png) no-repeat;
+	background-size: 100% 100%;
+}
+.large-household li:nth-child(5){
+	background: url(../img/012_21.png) no-repeat;
+    background-size: 100% 100%;
+    margin-right: 0;
+}
+
+.distribution{
+	width: 100%;
+	padding: 40px;
+	margin-bottom: 20px;
+}
+
+.distribution h3{
+	font-size: 18px;
+	color: #050505;
+}
+
+.distribution ul{
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.distribution li{
+	float: left;
+	width: 20%;
+	height: 150px;
+	text-align: center;
+}
+
+.word-cloud-chart{
+	width: 60%;
+	height: 700px;
+}
+

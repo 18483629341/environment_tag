@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> tree</title>
+    <meta charset="utf-8" />
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <script src="./js/jquery-3.3.1.min.js">
+    </script>
+
+    <div class="lists">
+        aaa
+    </div>
+
+    <script>
+        //目录树  lists    递归方法
+        var arr = [{
+            name: "四川",
+            distrct: [{
+                name: "成都",
+                distrct: [{
+                    name: '武侯区'
+                }, {
+                    name: '平武区'
+                }]
+            }, {
+                name: "绵阳",
+                distrct: [{
+                    name: '江油区'
+                }, {
+                    name: '德阳区',
+                    distrct: [{
+                        name: '杨顺街'
+                    }, {
+                        name: '中山街'
+                    }]
+                }]
+
+            }]
+        }, {
+            name: "山东",
+            distrct: [{
+                name: "济宁",
+                distrct: [{
+                    name: '梁山'
+                }, {
+                    name: '连阳'
+                }]
+
+
+
+            }, {
+                name: "济南"
+
+            }]
+        }, {
+            name: "重庆",
+            distrct: [{
+                name: "江津区",
+            }, {
+                name: "朝阳区"
+            }, {
+                name: "高新区"
+            }]
+        }];
+
+        var lists = $(".lists");
+
+        function findSon(arr, element) {
+            var strUl = $("<ul></ul>");
+            // arr.forEach(function(item, index) {
+
+            //     var strLi = $("<li>" + item.name + "<\li>");
+            //     strLi.appendTo(strUl);
+            //     if (item.distrct) {
+            //         findSon(item.distrct, strLi)
+            //     }
+            // }, this);
+
+            for (var i = 0; i < arr.length; i++) {
+                var strLi = $("<li>" + arr[i].name + "</li>");
+                strLi.appendTo(strUl);
+                if (arr[i].distrct) {
+                    findSon(arr[i].distrct, strLi)
+                }
+            }
+            strUl.appendTo(element);
+        }
+        findSon(arr, lists);
+    </script>
+
+</body>

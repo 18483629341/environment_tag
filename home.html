@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>环境标签服务系统</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/home.css" />
+	</head>
+	<body>
+		<div class="containter">
+			<div class="containter-title">
+				<img src="img/02_03.png"/>
+				<ul class="containter-title-nav">
+					<li class="active">
+						<img src="img/sy.png" class="nav-img-on"/>
+						<img src="img/sy_off.png" class="nav-img-off"/>
+						<span>首页</span>
+					</li>
+					<li>
+						<img src="img/qy.png" class="nav-img-on"/>
+						<img src="img/qy_off.png" class="nav-img-off"/>
+						<span>企业群体分析</span>
+
+					</li>
+					<li>
+						<img src="img/bq.png" class="nav-img-on"/>
+						<img src="img/bq_off.png" class="nav-img-off"/>
+						<span>标签工厂</span>
+					</li>
+				</ul>
+				<div class="containter-title-role">
+					<span>你好，真艺</span>
+					<img src="img/09_051.png" class="role-img-off"/>
+					<img src="img/09_05.png" class="role-img-on"/>
+				</div>
+			</div>
+			<div class="containter-left">
+				<ul>
+					<li class="active">
+						<img src="img/b_03.png" class="li-img-on"/>
+						<img src="img/c_03.png" class="li-img-off"/>
+						企业特征概览
+					</li>
+					<li>
+						<img src="img/b_06.png" class="li-img-on"/>
+						<img src="img/c_06.png" class="li-img-off"/>
+						排放行为特征
+					</li>
+					<li>
+						<img src="img/b_15.png" class="li-img-on"/>
+						<img src="img/c_15.png" class="li-img-off"/>
+						企业标签查询
+					</li>
+				</ul>
+			</div>
+			<div style="height: 65px;background: transparent;"></div>
+			<div class="containter-right">
+				<div class="right-title">
+					<img src="img/03.png"/>
+					<span>重点特征</span>
+				</div>
+				<div class="key-features">
+					<ul class="large-household">
+						<li class="large-household-box">
+							<h3>用电大户</h3>
+							<p>月用电规模>500W</p>
+							<img src="img/02_12.png"/>
+						</li>
+						<li class="large-household-box">
+							<h3>年废气排放大户</h3>
+							<p>月排放规模500-1000吨</p>
+							<img src="img/02_17.png"/>
+						</li>
+						<li class="large-household-box">
+							<h3>月投诉三次以上</h3>
+							<p>投诉次数>3</p>
+							<img src="img/02_14.png"/>
+						</li>
+						<li class="large-household-box">
+							<h3>用水大户</h3>
+							<p>月用水规模>1000吨</p>
+							<img src="img/02_23.png"/>
+						</li>
+						<li class="large-household-box">
+							<h3>月废气浓度超标</h3>
+							<p>连续三个月超标3次</p>
+							<img src="img/02_24.png"/>
+						</li>
+						<li class="large-household-box">
+							<h3>许可证超期</h3>
+							<p>逾期>三个月</p>
+							<img src="img/02_25.png"/>
+						</li>
+					</ul>
+					<ul class="feature-labels">
+						<li>
+							<h3>正面标签5<span style="color:#787878">(个)</span></h3>
+							<ol class="labels positive-label">
+								<li>生产正常运行</li>
+								<li>无信访投诉</li>
+								<li>正常排污</li>
+								<li>生产舆情评价</li>
+								<li>未出现浓度超标</li>
+							</ol>
+						</li>
+						<li>
+							<h3>负面标签5<span style="color:#787878">(个)</span></h3>
+							<ol class="labels negative-label">
+								<li>生产正常运行</li>
+								<li>无信访投诉</li>
+								<li>正常排污</li>
+								<li>生产舆情评价</li>
+								<li>未出现浓度超标</li>
+							</ol>
+						</li>
+					</ul>
+				</div>
+				<div class="right-title">
+					<img src="img/04.png"/>
+					<span>特征统计</span>
+				</div>
+				<div class="feature-statistics">
+					<div class="word-cloud">
+						<div class="statistics-title">
+							<h3>企业特征云图</h3>
+							<h5>Enterprise Characteristic Cloud</h5>
+						</div>
+						<ul class="word-check-boxs">
+							<li class="active check-all">全部</li>
+							<li class="active">基本特征</li>
+							<li class="active">排放行为特征</li>
+							<li class="active">监管行为特征</li>
+							<li class="active">价值特征</li>
+							<li class="active">风险防控</li>
+						</ul>
+						<div class="word-cloud-chart" id="wordCloud"></div>
+					</div>
+					<div class="label-rank">
+						<div class="statistics-title">
+							<h3>标签使用频率排名</h3>
+							<h5>Usage frequency ranking</h5>
+							<div class="time-tabs">
+								<span class="active">本周</span>
+								<span class="col-line"></span>
+								<span>本月</span>
+								<span class="col-line"></span>
+								<span>本年</span>
+							</div>
+						</div>
+						
+						<table class="ranking-table" cellspacing="0" >
+							<tr>
+								<td>排名</td>
+								<td style="display: table-cell;">标签名称</td>
+								<td>使用频率<span style="color:#787878">(次)</span></td>
+							</tr>
+							<tr>
+								<td><img src="img/01_19.png"/></td>
+								<td>高违法风险企业</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td><img src="img/01_22.png"/></td>
+								<td>高违法风险企业</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td><img src="img/01_24.png"/></td>
+								<td>高违法风险企业</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>高违法风险企业高违法风险企业高违法风险企业高违法风险企业</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>高违法风险企业</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>高违法风险企业</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>高违法风险企业</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>高违法风险企业</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>高违法风险企业</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>高违法风险企业</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>高违法风险企业</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>高违法风险企业</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td>13</td>
+								<td>高违法风险企业</td>
+								<td>1000</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</body>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/echarts-all-2.2.7.js" charset="utf-8"></script>
+	<script src="js/home.js"></script>
+</html>
