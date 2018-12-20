@@ -6,6 +6,47 @@
 .active{
 	color:@activeColor;
 }
+.treeLi.active{
+	color: #08c7ef;
+	.rightIcon{
+		background: url(../img/i_right.png) no-repeat;
+		background-size: 100% 100%;
+	}
+}
+.TreeList{
+	padding:4px 18px;
+	box-shadow: 0 0 27px 1px #f1eeee;
+	background: #fff;
+	display: inline-block;
+
+	.treeLi{
+		min-width: 71px;
+		font-size: 15px;
+		padding: 7px  0;
+	
+		.rightIcon{
+			float:right;
+			position: relative;
+			top: 8px;
+		}
+	}
+	
+	
+	.selectSpan.active{
+		color: #08c7ef;
+	}
+	li+li{
+		border-top: 1px solid #f4f4f4;
+	}
+	li:hover{
+		color: #08c7ef;
+		.rightIcon{
+			background: url(../img/i_right.png) no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+	
+}
 .LcontainterRight{
 	flex: 1;
 	display: flex;
@@ -102,13 +143,19 @@
 						display: none;
 						z-index: 100;
 						top: 30px;
+						.treeLi{
+							// letter-spacing: 1em;
+							// text-align: center;
+						}
 					}
-					.rotateIcon{
-						transform:rotate(180deg);
+					.dropIcon{
+						position: relative;
+    				top: -2px;
 					}
 					
+					
 				}
-				
+			
 				.selectLi.selectSpan{
 					display: inline-block;
 					padding:5px 5px 5px 0;
@@ -153,43 +200,10 @@
 	z-index: 3;
 	display: none;
 }
-.TreeList{
-	padding:4px 18px;
-	box-shadow: 0 0 27px 1px #f1eeee;
-	background: #fff;
-	display: inline-block;
 
-	.treeLi{
-		min-width: 71px;
-		font-size: 15px;
-		padding: 7px  0;
-	
-		.rightIcon{
-			float:right;
-			position: relative;
-			top: 8px;
-		}
-	}
-	.treeLi.active{
-		color: #08c7ef;
-    .rightIcon{
-			background: url(../img/i_right.png) no-repeat;
-      background-size: 100% 100%;
-		}
-	}
-	li+li{
-		border-top: 1px solid #f4f4f4;
-	}
-	li:hover{
-		color: #08c7ef;
-		.rightIcon{
-			background: url(../img/i_right.png) no-repeat;
-			background-size: 100% 100%;
-		}
-	}
-	
+.rotatel{
+	transform:rotate(180deg);
 }
-
 
 .rightIcon{
 	width:5px;

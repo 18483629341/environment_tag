@@ -296,12 +296,15 @@
 		})
 		
 		$("body").on('click','.treeLi',function(){  
-			  //只有有右箭头的才能执行以下操作；
+				//只有有右箭头的才能执行以下操作；
+				$(this).siblings(".treeLi").removeClass('active');
+				$(this).addClass('active');
 				nowLevel=$(this).parents('.TreeList').attr('id');
 				nowLevel=parseInt(nowLevel.split('_')[1]);//取得列表所在的层级
 				var 	thisIndex=parseInt($(this).attr('value'));//当前选中li元素附带的下标值
-				$(this).siblings("treeLi").removeClass('active');
-				$(this).addClass('active');
+				console.log(this);
+				var selfhtml=$(this).parent('.TreeList').prop('outerHTML');
+				htmlArr[nowLevel]=selfhtml;
 				//console.log(thisIndex);
 				$uls=$(this).parent('.TreeList').prevAll();
 				console.log($(this).children('.rightIcon').length);
@@ -377,7 +380,6 @@
 					}
 				}
 				nextHtml+='</ul>';
-			
 				htmlArr[i+1]=nextHtml;//置换html内容
 				//去除html数组长度的超过i+1后面的元素 
 				var newHtmlArr=[];
@@ -391,8 +393,8 @@
 					}
 				}
 				HtmlArr=newHtmlArr;
+				console.log(subHtml);
 				$('.TreeContent').html(subHtml);
-			}else{
 				
 			}
 		   
@@ -405,8 +407,11 @@
 	$(function(){
 		var showFlag=false;
 		$(".selectLi").click(function(){
-			$(this).find('.dropIcon.icon').toggleClass("rotateIcon");
-			$(this).children('.TreeList').toggleClass("show");	
+			$(this).find('.selectSpan').toggleClass("active");	
+			$(this).children('.TreeList').toggleClass('show');
+			$(this).children('.TreeLi').toggleClass("active");
+			console.log($(this).find('.dropIcon'));	
+			$(this).find('.dropIcon.icon').toggleClass('rotatel');
 		})
 	})
 	

@@ -4,6 +4,42 @@
 .active {
   color: #08c7ef;
 }
+.treeLi.active {
+  color: #08c7ef;
+}
+.treeLi.active .rightIcon {
+  background: url(../img/i_right.png) no-repeat;
+  background-size: 100% 100%;
+}
+.TreeList {
+  padding: 4px 18px;
+  box-shadow: 0 0 27px 1px #f1eeee;
+  background: #fff;
+  display: inline-block;
+}
+.TreeList .treeLi {
+  min-width: 71px;
+  font-size: 15px;
+  padding: 7px  0;
+}
+.TreeList .treeLi .rightIcon {
+  float: right;
+  position: relative;
+  top: 8px;
+}
+.TreeList .selectSpan.active {
+  color: #08c7ef;
+}
+.TreeList li + li {
+  border-top: 1px solid #f4f4f4;
+}
+.TreeList li:hover {
+  color: #08c7ef;
+}
+.TreeList li:hover .rightIcon {
+  background: url(../img/i_right.png) no-repeat;
+  background-size: 100% 100%;
+}
 .LcontainterRight {
   flex: 1;
   display: flex;
@@ -101,8 +137,9 @@
   z-index: 100;
   top: 30px;
 }
-.LcontainterRight .ContenInfo .InfoListRight .InfoListContent .selectLi .rotateIcon {
-  transform: rotate(180deg);
+.LcontainterRight .ContenInfo .InfoListRight .InfoListContent .selectLi .dropIcon {
+  position: relative;
+  top: -2px;
 }
 .LcontainterRight .ContenInfo .InfoListRight .InfoListContent .selectLi.selectSpan {
   display: inline-block;
@@ -139,38 +176,8 @@
   z-index: 3;
   display: none;
 }
-.TreeList {
-  padding: 4px 18px;
-  box-shadow: 0 0 27px 1px #f1eeee;
-  background: #fff;
-  display: inline-block;
-}
-.TreeList .treeLi {
-  min-width: 71px;
-  font-size: 15px;
-  padding: 7px  0;
-}
-.TreeList .treeLi .rightIcon {
-  float: right;
-  position: relative;
-  top: 8px;
-}
-.TreeList .treeLi.active {
-  color: #08c7ef;
-}
-.TreeList .treeLi.active .rightIcon {
-  background: url(../img/i_right.png) no-repeat;
-  background-size: 100% 100%;
-}
-.TreeList li + li {
-  border-top: 1px solid #f4f4f4;
-}
-.TreeList li:hover {
-  color: #08c7ef;
-}
-.TreeList li:hover .rightIcon {
-  background: url(../img/i_right.png) no-repeat;
-  background-size: 100% 100%;
+.rotatel {
+  transform: rotate(180deg);
 }
 .rightIcon {
   width: 5px;
