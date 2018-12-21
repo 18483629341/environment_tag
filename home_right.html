@@ -267,9 +267,9 @@
             }	
 				];
 				$(function(){
-					initHtml();
+					initHtml(ARR);
 				})
-			function initHtml(){
+			function initHtml(ARR){
 				TreeContent=document.createElement('div');
 				TreeContent.setAttribute('class','TreeContent');
 				
@@ -407,10 +407,15 @@
 	$(function(){
 		var showFlag=false;
 		$(".selectLi").click(function(){
+			//所有此类元素的处理
+			$('.selectLi').find('.selectSpan').removeClass("active");	
+			$('.selectLi').children('.TreeList').removeClass('show');
+			$('.selectLi').children('.TreeLi').removeClass("active");
+			$('.selectLi').find('.dropIcon.icon').removeClass('rotatel');
+			//本元素的处理
 			$(this).find('.selectSpan').toggleClass("active");	
 			$(this).children('.TreeList').toggleClass('show');
 			$(this).children('.TreeLi').toggleClass("active");
-			console.log($(this).find('.dropIcon'));	
 			$(this).find('.dropIcon.icon').toggleClass('rotatel');
 		})
 	})
